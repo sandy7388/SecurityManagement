@@ -1,0 +1,39 @@
+<resources>
+    <string name="app_name">Security Management</string>
+    <string name="title_activity_main_screen">Security Management System</string>
+    <string name="guard_name"> Enter Full Name of Guard...</string>
+    <string name="location">Select Location:-</string>
+    <string name="status">Select Working Status:-</string>
+    <string name="update">SUBMIT</string>
+    <string name="todo">TODO</string>
+    <string name="todo1">TODO</string>
+    <string name="login">LogIn</string>
+    <string name="username1">Username</string>
+    <string name="password">Password</string>
+
+    <string name="forgot_password">Forgot Password...!</string>
+    <string name="click_here"><u>Click here</u></string>
+    <string name="todo2">TODO</string>
+    <string name="enter_your_username_to_generate_otp">Enter your Username to Generate OTP</string>
+    <string name="generate_otp">Generate OTP</string>
+    <string name="submit">Submit</string>
+    <string name="username">Username</string>
+    <string name="enter_otp">Enter OTP</string>
+    <string name="trouble_logging_in">Trouble Logging In.....</string>
+    <string name="confirm_password"> Confirm Password</string>
+    <string name="enter_your_username_to_forgot_password">Enter your username to forgot password....</string>
+    <string name="new_password"> New Password</string>
+    <string name="reset">Reset</string>
+    <string name="runtime_permissions_txt">Please enable ALL permissions from app settings.</string>
+    <string name="username_mobile">Username</string>
+    <string name="cancel">cancel</string>
+
+
+    <string-array name="location">
+        <item>Select Location</item>
+    </string-array>
+
+    <string-array name="working_status">
+        <item>Select Working Status</item>
+    </string-array>
+</resources>

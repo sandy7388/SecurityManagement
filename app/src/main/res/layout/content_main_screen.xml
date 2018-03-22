@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_background"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.sandy.securitymanagement.activity.MainActivity"
+    tools:showIn="@layout/activity_main_screen">
+
+    <ScrollView
+        android:scrollbars="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:weightSum="2">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="190sp"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_alignParentBottom = "true"
+                    android:scaleType="fitXY"
+                    android:id="@+id/imageView"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/bg_image"
+                    android:contentDescription="@string/todo" />
+
+                <TextView
+                    android:capitalize="words"
+                    android:inputType="textCapWords"
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+                    android:id="@+id/textview_username"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginBottom="24dp"
+                    android:layout_marginLeft="27dp"
+                    android:layout_marginStart="27dp" />
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:padding="10sp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <EditText
+                    android:id="@+id/editText_guard_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:hint="Enter Name of Guard"
+                    android:inputType="text|textCapWords"
+                    android:layout_margin="5dp"
+                    android:padding="5dp"
+                    android:background="@drawable/edittextborder"
+                    android:textColor="@android:color/background_dark" />
+
+                <TextView
+                    android:layout_margin="05dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="5sp"
+                    android:paddingLeft="5sp"
+                    android:paddingRight="5sp"
+                    android:paddingTop="5sp"
+                    android:text="@string/location"
+                    android:textSize="17sp" />
+
+                <Spinner
+                    android:visibility="gone"
+                    android:entries="@array/location"
+                    android:id="@+id/spinner_location"
+                    android:layout_width="match_parent"
+                    android:layout_height="30sp"
+                    android:background="@drawable/spinner_drawable"
+                    android:paddingBottom="5sp"
+                    android:padding="5sp" />
+
+                <AutoCompleteTextView
+                    android:inputType="text|textCapWords"
+                    android:id="@+id/autoText"
+                    android:hint="Search Location"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/edittextborder"
+                    android:layout_margin="5dp"
+                    android:padding="05dp"
+                    android:imeOptions="actionDone"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp" />
+
+                <TextView
+                    android:layout_margin="05dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="5sp"
+                    android:paddingLeft="5sp"
+                    android:paddingRight="5sp"
+                    android:paddingTop="5sp"
+                    android:text="@string/status"
+                    android:textSize="17sp" />
+
+                <Spinner
+                    android:layout_margin="05dp"
+                    android:entries="@array/working_status"
+                    android:id="@+id/spinner_status"
+                    android:layout_width="match_parent"
+                    android:layout_height="40sp"
+                    android:background="@drawable/spinner_drawable"
+                    android:padding="5sp"
+                    android:imeOptions="actionDone"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:nextFocusDown="@+id/autoText"/>
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp">
+
+                    <Button
+                        android:layout_margin="05dp"
+                        android:id="@+id/button_upload"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/btn_drawable"
+                        android:paddingBottom="15sp"
+                        android:paddingTop="15sp"
+                        android:text="@string/update"
+                        android:enabled="true"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

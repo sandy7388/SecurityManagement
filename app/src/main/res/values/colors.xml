@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#525252</color>
+    <color name="colorPrimaryDark">#df3f94</color>
+    <color name="colorAccent">#ff4081</color>
+    <color name="color_pink">#f18875</color>
+    <color name="color_yellow">#f2d35b</color>
+    <color name="color_sample">#f08878</color>
+    <color name="color_logo">#a0cc6a</color>
+    <color name="color_background">#eeeeef</color>
+
+
+
+
+
+    <color name="colorBlack">#000000</color>
+    <color name="colorWhite">#FFFFFF</color>
+    <color name="colorSlateGrey">#708090</color>
+    <color name="colorLightGrey">#D3D3D3</color>
+
+
+
+
+
+
+
+
+
+
+
+
+    <color name="colorButtonBlue">#6c98e0</color>
+    <color name="colorCustomYellow">#e8eb44</color>
+    <color name="colorCustomRed">#ff4a4a</color>
+    <color name="colorCustomIcon">#cc621b</color>
+    <color name="colorPink">#ec1dbf</color>
+    <color name="colorPink_number">#f889d9</color>
+
+    <color name="red_ptr">#FFC93437</color>
+    <color name="blue">#35404E</color>
+
+    <color name="colorYellowDarker">#f0c562</color>
+    <color name="colorYellowLight">#a29127</color>
+
+    <color name="color_viole">#871dbc</color>
+    <color name="color_blue">#104ad1</color>
+
+    <color name="transparant">#00112233</color>
+</resources>

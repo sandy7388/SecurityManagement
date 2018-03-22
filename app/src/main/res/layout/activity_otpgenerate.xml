@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.sandy.securitymanagement.activity.ForgotPasswordActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar_generate_otp"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/colorPrimary" />
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="15sp"
+    tools:context="com.example.sandy.securitymanagement.activity.OTPGenerateActivity">
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/editText_Mobile_username"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="19dp"
+        android:text="@string/enter_your_username_to_generate_otp"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/editText_Mobile_username"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_above="@+id/button_generate_otp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="24dp"
+        android:gravity="center"
+        android:hint="@string/username"
+        android:background="@drawable/edittextborder"
+        android:inputType="text" />
+
+    <Button
+        android:id="@+id/button_generate_otp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:background="@drawable/btn_drawable"
+        android:text="@string/generate_otp" />
+
+    <EditText
+        android:id="@+id/editText_otp"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_alignBottom="@+id/button_submit_otp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="79dp"
+        android:gravity="center"
+        android:background="@drawable/edittextborder"
+        android:hint="@string/enter_otp"
+        android:inputType="number" />
+
+    <Button
+        android:id="@+id/button_submit_otp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/editText_otp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignRight="@+id/editText_otp"
+        android:layout_marginBottom="90dp"
+        android:background="@drawable/btn_drawable"
+        android:text="@string/submit" />
+
+</RelativeLayout>
+</RelativeLayout>
